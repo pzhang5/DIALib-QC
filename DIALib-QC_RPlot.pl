@@ -38,7 +38,9 @@ use Statistics::R;
 my $R = Statistics::R->new();
 $R->run( q`library(ggplot2)` );
 $R->run( q`library(scales)` );
-$R->run( q`install.packages("ggpubr")`);
+
+# The original code could not install ggpubr package, add specific repo.
+$R->run( q`install.packages("ggpubr",repos = "https://cloud.r-project.org/", dependencies = TRUE)`);
 $R->run( q`library(ggpubr)`);
 
 $R->set( 'filename', $filename );
