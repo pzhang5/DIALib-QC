@@ -248,6 +248,17 @@ my %known_mods = (
 		'G[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'g'},
 		'P[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'p'},
 		'K[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'k'},
+		
+		# naively added those aminio acid modifications by pzhang5
+		# use at your own risk. 
+		# no guaratee they are correct.
+		'H[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'h'},
+         	'I[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'i'},
+         	'L[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'l'},
+         	'N[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'n'},
+         	'Q[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'q'},
+         	'R[Acetyl (Protein N-term)]' => {'mz' => 42.010565, 'aa' => 'r'},
+
               );
 my %mods_current;
 my $nterm_mod;
